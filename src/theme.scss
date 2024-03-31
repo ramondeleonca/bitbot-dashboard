@@ -29,3 +29,34 @@ body {
 * {
     scrollbar-width: thin;
 }
+
+@keyframes ellipsis {
+    0% {
+        content: ".";
+    }
+    25% {
+        content: "..";
+    }
+    50% {
+        content: "...";
+    }
+}
+
+@-webkit-keyframes ellipsis {
+    0% {
+        content: ".";
+    }
+    25% {
+        content: "..";
+    }
+    50% {
+        content: "...";
+    }
+}
+
+.ellipsis {
+    &::after {
+        content: "";
+        animation: ellipsis linear 1s infinite;
+    }
+}
