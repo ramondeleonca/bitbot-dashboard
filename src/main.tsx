@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./global.scss"
+import "reactflow/dist/style.css"
 import App from './App'
 import { ThemeProvider } from './components/theme-provider'
 import { Toaster } from './components/ui/sonner'
